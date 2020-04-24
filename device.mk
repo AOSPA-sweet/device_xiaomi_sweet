@@ -109,7 +109,8 @@ PRODUCT_PACKAGES += \
     FrameworkResOverlaySweet \
     SettingsProviderOverlaySweet \
     SystemUIOverlaySweet \
-    TelephonyOverlaySweet
+    TelephonyOverlaySweet \
+    WifiOverlay
 
 # Permissions
 PRODUCT_COPY_FILES += \

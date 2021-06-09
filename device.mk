@@ -108,6 +108,8 @@ PRODUCT_PACKAGES += \
     DialerOverlaySweet \
     FrameworkResOverlaySweet \
     SettingsProviderOverlaySweet \
+    SweetinproSettingsProvider \
+    SweetinproWifiOverlay \
     SystemUIOverlaySweet \
     TelephonyOverlaySweet \
     WifiOverlay

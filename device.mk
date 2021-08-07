@@ -7,8 +7,13 @@ PRODUCT_TARGET_VNDK_VERSION := 30
 # Dynamic partitions setup
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+<<<<<<< HEAD
 # AAPT
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+=======
+# AudioFX
+TARGET_EXCLUDES_AUDIOFX := true
+>>>>>>> 8995cec (sweet: exclude AudioFX)
 
 # Audio
 PRODUCT_COPY_FILES += \

@@ -1254,6 +1254,10 @@ vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so
 vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
+<<<<<<< HEAD
+=======
+vendor/lib64/vendor.qti.hardware.trustedui@1.0.so
+>>>>>>> 1ba60f0 (sweet: Build vendor.qti.hardware.systemhelper v1.0)
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so

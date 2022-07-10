@@ -195,6 +195,7 @@ ro.hwui.text_large_cache_height=1024
 ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.sm6150.api30
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
+vendor.display.disable_metadata_dynamic_fps=1
 
 # Fingerprint
 ro.hardware.fingerprint=fpc

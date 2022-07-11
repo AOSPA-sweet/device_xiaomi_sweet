@@ -182,6 +182,9 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     libqti-perfd-client
 
+# Platform
+TARGET_BOARD_PLATFORM := sm6150
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.sweet-libperfmgr

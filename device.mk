@@ -45,11 +45,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.default
 
-# HIDL
-PRODUCT_PACKAGES += \
-    android.hidl.base@1.0 \
-    android.hidl.manager@1.0
-
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd \
@@ -57,10 +52,12 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    init.qcom.rc \
-    init.qcom.usb.rc \
     init.sweet.rc \
     init.target.rc
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/init.qcom.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qcom.usb.rc \
+    $(LOCAL_PATH)/rootdir/bin/init.qcom.usb.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.usb.sh
 
 PRODUCT_PACKAGES += \
     init.class_main.sh \
@@ -391,4 +388,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libgui-shim
 
-include vendor/xiaomi/sweet/sweet-vendor.mk
+# QC common
+TARGET_COMMON_QTI_COMPONENTS := \
+    adreno \
+    av \
+    bt \
+    display \
+    gps \
+    media-legacy \
+    vibrator \
+    wlan
+
+$(call inherit-product, vendor/xiaomi/sweet/sweet-vendor.mk)
+
+$(call inherit-product, device/qcom/common/common.mk)

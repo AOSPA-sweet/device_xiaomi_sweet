@@ -69,7 +69,7 @@ BOARD_KERNEL_CMDLINE += kpti=off
 #BOARD_KERNEL_CMDLINE += video=vfb:640x400,bpp=32,memsize=3072000 earlycon=msm_geni_serial,0x880000
 
 BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
 
@@ -159,7 +159,6 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 TARGET_SEPOLICY_DIR := msmsteppe
--include device/qcom/sepolicy_vndr/SEPolicy.mk
 
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2022-07-01

@@ -119,6 +119,7 @@ persist.vendor.qcom.bluetooth.enable.swbpm=false \
 persist.vendor.qcom.bluetooth.scram.enabled=true \
 persist.vendor.qcom.bluetooth.soc=cherokee \
 persist.vendor.qcom.bluetooth.twsp_state.enabled=false \
+persist.vendor.bt.a2dp.mac_whitelist=false \
 ro.vendor.bluetooth.wipower=false
 
 # Blur

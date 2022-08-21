@@ -86,8 +86,7 @@ TARGET_KERNEL_CROSS_COMPILE_PREFIX_ARM32 := arm-linux-gnueabi-
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sweet
 
 # Manifest
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    $(DEVICE_PATH)/manifests/device_framework_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/manifests/device_framework_matrix.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifests/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/manifests/compatibility_matrix.xml
 ODM_MANIFEST_SKUS := nfc

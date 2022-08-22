@@ -282,9 +282,9 @@ PRODUCT_PACKAGES += \
     WifiResSweet
 
 # Perf
-PRODUCT_PACKAGES += \
-    libqti-perfd-client
-    
+#PRODUCT_PACKAGES += \
+#    libqti-perfd-client
+
 # Platform
 MSMSTEPPE := sm6150
 TARGET_BOARD_PLATFORM := $(MSMSTEPPE)    
@@ -302,8 +302,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qdcm_calib_data_xiaomi_k6_38_0c_0a_fhd_dsc_video_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_xiaomi_k6_38_0c_0a_fhd_dsc_video_dsi_panel.xml
 
 # QTI
-TARGET_COMMON_QTI_COMPONENTS := \
-    bt
+TARGET_COMMON_QTI_COMPONENTS := 
+    bt \
+    perf
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -414,3 +415,4 @@ $(call inherit-product, vendor/xiaomi/sweet/sweet-vendor.mk)
 
 # Inherit MIUI Camera
 $(call inherit-product-if-exists, vendor/miuicamera/config.mk)
+

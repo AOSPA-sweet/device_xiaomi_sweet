@@ -1,4 +1,11 @@
 # Audio
+persist.vendor.audio.hifi=false
+persist.vendor.audio.ring.filter.mask=0
+ro.vendor.audio.soundfx.usb=true
+ro.vendor.audio.us.type=mius
+persist.vendor.audio.voicecall.speaker.stereo=true
+vendor.audio.feature.compr_voip.enable=false
+vendor.voice.path.for.pcm.voip=false
 aaudio.hw_burst_min_usec=2000
 aaudio.mmap_exclusive_policy=2
 aaudio.mmap_policy=1
@@ -128,6 +135,13 @@ persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
 ro.telephony.iwlan_operation_mode=legacy
 
+# Display
+ro.surface_flinger.set_idle_timer_ms=4000
+ro.surface_flinger.set_touch_timer_ms=4000
+ro.surface_flinger.set_display_power_timer_ms=1000
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
+vendor.display.override_doze_mode=1
+
 # DPM
 persist.vendor.dpm.feature=1
 persist.vendor.dpm.nsrm.bkg.evt=3955
@@ -180,6 +194,9 @@ vendor.display.qdcm.mode_combine=1
 persist.sys.sf.color_saturation=1.0
 persist.sys.sf.native_mode=2
 persist.sys.sf.color_mode=9
+
+# Fluence
+ro.vendor.audio.sdk.fluencetype=fluence
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
